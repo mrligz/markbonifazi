@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+body {
+  background-color: #1a2234;
+  color: rgb(204, 214, 246);
+  padding-top: 50px;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: .35s;
+  -o-transition-duration: .35s;
+  transition-duration: .35s;
+  -webkit-transition-property: padding-top;
+  -o-transition-property: padding-top;
+  transition-property: padding-top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+/* :::::::::: navbar styling :::::::::: */
+.customNavbar {
+  transition: 500ms ease;
+  background-color: #1a2234 !important;
+  /* background-color: rgba(10, 16, 27, 1) !important; */
+  font-family: "Lato", sans-serif;
+  letter-spacing: .1rem;
+}
+
+.customNavbar.scrolled {
+  background-color: #1a2234 !important;
+  box-shadow: 3px 3px 10px rgba(10, 16, 27, 1);
+}
+
+a {
+  position: relative;
+  color: rgb(204, 214, 246) !important;
+  font-family: "Lato", sans-serif;
+}
+
+#navbarNav a.active {
+  color: #65c8d0 !important;
+}
+
+#navbarNav a:hover {
+  color: #65c8d0 !important;
+  transition: 0.3s;
+}
+
+#navbarNav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #65c8d0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#navbarNav a:hover::before {
+  visibility: visible !important;
+  transform: scaleX(1) !important;
+}
+
+/* navbar logo */
+.navbar-brand img {
+  margin-left: -100px;
+  margin-top: -5px;
+}
+
+img {
+  height: 60px;
+}
+
+img:hover {
+  filter: brightness(150%);
+  transition: 0.3s;
+}
+
+.customUL {
+  margin-right: -100px;
+}
+
+.customUL li {
+  padding-right: .7rem;
+}
+
+/* :::::::::: landing page :::::::::: */
+.hero {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.landing-text {
+  margin-top: 150px;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(204, 214, 246);
+  font-size: 80px;
+}
+
+h5 {
+  color: #65c8d0;
+  font-family: "Fira Code"
+}
+
+h6 {
+  color: rgb(136, 146, 176);
+}
+
+.btn {
+  margin-top: 50px;
+  border-color: #65c8d0;
+  color: #65c8d0 !important;
+}
+
+.btn:hover {
+  background-color: rgba(5, 123, 133, 0.77);
+  border-color: #65c8d0;
+  transition: 450ms ease;
+}
+
+/* :::::::::: Media Query :::::::::: */
+@media screen and (max-width:990px) {
+  .navbar-brand {
+    display: block;
+    margin: 0;
+  }
+
+  .customNavbar {
+    box-shadow: 3px 3px 10px rgba(10, 16, 27, 1);
+  }
+
+  .customUL {
+    margin-right: 0px;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .navbar-brand img {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+
+  /* for when nav is collpasping */
+  .show, .collapsing {
+    text-align: center;
+  }
+
+  /* collapsing end */
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+}
+
+/* :::::::::: About :::::::::: */
+#about {
+  height: 700px;
+}
