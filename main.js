@@ -30,5 +30,5 @@ $('.navbar-nav>li>a').on('click', function(){
 
 // navbar scroll animation
 $(window).scroll(function () {
-$('.customNavbar').toggleClass('scrolled', $(this).scrollTop() > 300);
+$('.customNavbar').toggleClass('scrolled', $(this).scrollTop() > 40);
 })

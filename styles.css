@@ -110,7 +110,7 @@ img:hover {
   font-family: 'Lato', sans-serif;
 }
 
-h5 {
+h5, h3 {
   color: #65c8d0;
   font-family: "Fira Code"
 }
@@ -148,7 +148,7 @@ h6 {
 
   h1 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .navbar-brand img {
@@ -170,4 +170,12 @@ h6 {
 /* :::::::::: About :::::::::: */
 #about {
   height: 700px;
+}
+
+.title {}
+
+.aboutText {
+  margin-top: 50px;
+  color: rgb(204, 214, 246);
+  font-family: "Lato", sans serif;
 }
