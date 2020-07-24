@@ -3,7 +3,7 @@
 
 body {
   font-family                       : 'Lato', sans-serif;
-  background-color                  : #273040;
+  background-color                  : #white;
   color                             : rgb(204, 214, 246);
   padding-top                       : 50px;
   -webkit-transition-timing-function: ease;
