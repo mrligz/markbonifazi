@@ -3,9 +3,8 @@
 
 body {
   font-family                       : 'Lato', sans-serif;
-  background-color                  : #white;
+  background-color                  : #242a3a;
   color                             : rgb(204, 214, 246);
-  padding-top                       : 50px;
   -webkit-transition-timing-function: ease;
   -o-transition-timing-function     : ease;
   transition-timing-function        : ease;
@@ -25,6 +24,19 @@ h5,
 h6 {
   text-align: center;
 }
+
+#content {
+  display       : flex !important;
+  flex-direction: column;
+}
+
+.about-text,
+.landing-text {
+  padding   : 8%;
+  width     : 70%;
+  box-shadow: 0 0 60px 0 #000000a6;
+  margin    : 5% auto 4% !important;
+}
 /* :::::::::: navbar styling :::::::::: */
 .customNavbar {
   transition      : 500ms ease;
@@ -36,7 +48,7 @@ h6 {
 
 .customNavbar.scrolled {
   background-color: #1a2234 !important;
-  box-shadow      : 3px 3px 10px rgba(10, 16, 27, 1);
+  box-shadow      : 0 3px 10px rgba(10, 16, 27, 1);
 }
 
 a {
@@ -94,15 +106,18 @@ img:hover {
   padding-right: 0.7rem;
 }
 /* :::::::::: hero page :::::::::: */
+.about,
 .hero {
   display        : flex;
   justify-content: center;
   height         : 100vh;
 }
 
+.about-text,
 .landing-text {
-  margin-top: 150px;
+  margin-top: 10px;
   text-align: center;
+  align-self: center;
 }
 
 .name {
@@ -148,9 +163,20 @@ h6 {
     margin-right: 0;
   }
 
-  h1 {
+  .name {
     font-size  : 40px;
     font-weight: 700;
+  }
+
+  .about-text,
+  .landing-text {
+    width     : auto;
+    text-align: center;
+    align-self: center;
+  }
+
+  .aboutText {
+    margin-top: 20px !important;
   }
 
   .navbar-brand img {
@@ -174,7 +200,7 @@ h6 {
 }
 /* :::::::::: About :::::::::: */
 #about {
-  height: 700px;
+  height: 900px;
 }
 
 .title {}
