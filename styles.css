@@ -3,7 +3,7 @@
 
 body {
   font-family                       : 'Lato', sans-serif;
-  background-color                  : #242a3a;
+  background-color                  : #1a2234;
   color                             : rgb(204, 214, 246);
   -webkit-transition-timing-function: ease;
   -o-transition-timing-function     : ease;
@@ -23,6 +23,20 @@ h4,
 h5,
 h6 {
   text-align: center;
+}
+
+h3,
+h5 {
+  color      : #65c8d0;
+  font-family: "Fira Code";
+}
+
+h6 {
+  color: rgb(136, 146, 176);
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 #content {
@@ -127,16 +141,6 @@ img:hover {
   font-family: 'Lato', sans-serif;
 }
 
-h3,
-h5 {
-  color      : #65c8d0;
-  font-family: "Fira Code";
-}
-
-h6 {
-  color: rgb(136, 146, 176);
-}
-
 .btn {
   margin-top  : 30px;
   border-color: #65c8d0;
@@ -200,14 +204,11 @@ h6 {
 }
 /* end media query */
 /* :::::::::: About :::::::::: */
-#about {
-  height: 900px;
+.title {
+  margin-bottom: 25px;
 }
 
-.title {}
-
 .aboutText {
-  margin-top : 50px;
   color      : rgb(204, 214, 246);
   font-family: "Lato", sans serif;
 }
