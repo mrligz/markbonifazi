@@ -29,7 +29,7 @@ $('.navbar-nav>li>a').on('click', function(){
 });
 
 $('.navbar-brand>img').on('click', function(){
-    $('.animated-icon2').toggleClass('open');
+    $('.animated-icon2').removeClass('open');
 });
 
 // navbar scroll style animation
