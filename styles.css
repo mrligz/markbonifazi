@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
 
 body {
-  font-family                       : 'Lato', sans-serif;
-  background-color                  : #1a2234;
-  color                             : rgb(204, 214, 246);
+  font-family: 'Lato', sans-serif;
+  background-color: #1a2234;
+  color: rgb(204, 214, 246);
   -webkit-transition-timing-function: ease;
-  -o-transition-timing-function     : ease;
-  transition-timing-function        : ease;
-  -webkit-transition-duration       : 0.35s;
-  -o-transition-duration            : 0.35s;
-  transition-duration               : 0.35s;
-  -webkit-transition-property       : padding-top;
-  -o-transition-property            : padding-top;
-  transition-property               : padding-top;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-property: padding-top;
+  -o-transition-property: padding-top;
+  transition-property: padding-top;
 }
 
 h1,
@@ -27,7 +27,7 @@ h6 {
 
 h3,
 h5 {
-  color      : #65c8d0;
+  color: #65c8d0;
   font-family: "Fira Code";
 }
 
@@ -40,34 +40,35 @@ p {
 }
 
 #content {
-  display       : flex !important;
+  display: flex !important;
   flex-direction: column;
 }
 
 .about-text,
 .landing-text {
-  padding   : 8%;
-  width     : 70%;
+  padding: 8%;
+  width: 70%;
   box-shadow: 0 0 60px 0 #000000a6;
-  margin    : 5% auto 4% !important;
+  margin: 5% auto 4% !important;
 }
+
 /* :::::::::: navbar styling :::::::::: */
 .customNavbar {
-  transition      : 500ms ease;
+  transition: 500ms ease;
   background-color: #1a2234 !important;
   /* background-color: rgba(10, 16, 27, 1) !important; */
-  font-family     : "Lato", sans-serif;
-  letter-spacing  : 0.1rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 .customNavbar.scrolled {
   background-color: #1a2234 !important;
-  box-shadow      : 0 3px 10px rgba(10, 16, 27, 1);
+  box-shadow: 0 3px 10px rgba(10, 16, 27, 1);
 }
 
 a {
-  position   : relative;
-  color      : rgb(204, 214, 246) !important;
+  position: relative;
+  color: rgb(204, 214, 246) !important;
   font-family: "Lato", sans-serif;
 }
 
@@ -76,31 +77,32 @@ a {
 }
 
 #navbarNav a:hover {
-  color     : #65c8d0 !important;
+  color: #65c8d0 !important;
   transition: 0.3s;
 }
 
 #navbarNav a::before {
-  content         : "";
-  position        : absolute;
-  width           : 100%;
-  height          : 2px;
-  bottom          : 0;
-  left            : 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
   background-color: #65c8d0;
-  visibility      : hidden;
-  transform       : scaleX(0);
-  transition      : all 0.3s ease-in-out 0s;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
 }
 
 #navbarNav a:hover::before {
   visibility: visible !important;
-  transform : scaleX(1) !important;
+  transform: scaleX(1) !important;
 }
+
 /* navbar logo */
 .navbar-brand img {
   margin-left: -100px;
-  margin-top : -5px;
+  margin-top: -5px;
 }
 
 img {
@@ -119,12 +121,17 @@ img:hover {
 .customUL li {
   padding-right: 0.7rem;
 }
+
+.ham {
+  opacity: 1 !important;
+}
+
 /* :::::::::: hero page :::::::::: */
 .about,
 .hero {
-  display        : flex;
+  display: flex;
   justify-content: center;
-  height         : 100vh;
+  height: 100vh;
 }
 
 .about-text,
@@ -135,28 +142,38 @@ img:hover {
 }
 
 .name {
-  color      : rgb(204, 214, 246);
-  font-size  : 80px;
+  color: rgb(204, 214, 246);
+  font-size: 80px;
   font-weight: 700;
   font-family: 'Lato', sans-serif;
 }
 
+span {
+  opacity: 0 !important;
+  transition: all 1s ease !important;
+}
+
+span.fade {
+  opacity: 1 !important;
+}
+
 .btn {
-  margin-top  : 30px;
+  margin-top: 30px;
   border-color: #65c8d0;
-  color       : #65c8d0 !important;
+  color: #65c8d0 !important;
 }
 
 .btn:hover {
   background-color: rgba(5, 123, 133, 0.77);
-  border-color    : #65c8d0;
-  transition      : 450ms ease;
+  border-color: #65c8d0;
+  transition: 450ms ease;
 }
+
 /* :::::::::: Media Query :::::::::: */
 @media screen and (max-width:990px) {
   .navbar-brand {
     display: block;
-    margin : 0;
+    margin: 0;
   }
 
   .customNavbar {
@@ -168,13 +185,13 @@ img:hover {
   }
 
   .name {
-    font-size  : 40px;
+    font-size: 40px;
     font-weight: 700;
   }
 
   .about-text,
   .landing-text {
-    width     : auto;
+    width: auto;
     text-align: center;
     align-self: center;
   }
@@ -185,13 +202,15 @@ img:hover {
 
   .navbar-brand img {
     margin-left: 0;
-    margin-top : 5px;
+    margin-top: 5px;
   }
+
   /* for when nav is collpasping */
   .collapsing,
   .show {
     text-align: center;
   }
+
   /* collapsing end */
   h1,
   h2,
@@ -202,6 +221,7 @@ img:hover {
     text-align: center;
   }
 }
+
 /* end media query */
 /* :::::::::: About :::::::::: */
 .title {
@@ -209,6 +229,6 @@ img:hover {
 }
 
 .aboutText {
-  color      : rgb(204, 214, 246);
+  color: rgb(204, 214, 246);
   font-family: "Lato", sans serif;
 }
